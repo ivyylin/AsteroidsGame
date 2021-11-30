@@ -45,8 +45,16 @@ class Floater //Do NOT modify the Floater class! Make changes in the Spaceship c
     else if (myCenterY < 0)
     {     
       myCenterY = height;    
-    }   
+    } 
+    
   }   
+  public void hyperspace()
+    {
+      myXspeed=0;
+      myYspeed=0;
+      myCenterX=(int)(Math.random()*500);
+      myCenterY=(int)(Math.random()*500);
+    }
   public void show ()  //Draws the floater at the current position  
   {             
     fill(myColor);   
