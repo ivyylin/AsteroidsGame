@@ -16,5 +16,14 @@ class Spaceship extends Floater
       myPointDirection=0;
       myCenterX=250;
       myCenterY=250;
+    
 }
+public void hyperspace()
+    {
+      myXspeed=0;
+      myYspeed=0;
+      myCenterX=(int)(Math.random()*500);
+      myCenterY=(int)(Math.random()*500);
+      myPointDirection = Math.random()*360;
+    }
 }
